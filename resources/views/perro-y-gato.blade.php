@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perro y Gato </title>
+    <title>Perro y Gato</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-QcXsB6BnKcPDaR6xOsEsM1t/BPvNvWQNTMArGZzg9Zu4ndL/EVXlW6fX+8X9RM1jQCGwMD1YMqipf5y8VX9x8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -78,7 +78,7 @@
 }
     </style>
 </head>
-
+<body>
 <nav class="navbar navbar-expand-lg navbar-light custom-bg-celeste">
 
     <div class="container">
@@ -104,6 +104,7 @@
                 </li>
                 <li class="nav-item">
     <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Carrito</a>
+    
 </li>
             </ul>
         </div>
@@ -145,7 +146,13 @@
         </div>
     </div>
 </section>
-
+<!-- Carrito de compras -->
+<div class="fixed-bottom bg-white p-3">
+        <h4 class="mb-3">Carrito de Compras</h4>
+        <ul id="carrito-list" class="list-group">
+            <!-- Los productos del carrito se mostrarán aquí -->
+        </ul>
+    </div>
 <section class="py-5" style="background-color: #7469B6;">
 <br>
 <p>Alimentos Para Perros</p>
@@ -356,38 +363,52 @@
     </div>
 </div>
 </section>
-<script>
-    // Objeto para almacenar los productos en el carrito
-    let carrito = [];
 
-    // Función para agregar un producto al carrito
-    function agregarAlCarrito(nombre, precio) {
-        const producto = { nombre, precio };
-        carrito.push(producto);
-        actualizarCarrito();
-    }
 
-    // Función para eliminar un producto del carrito
-    function eliminarDelCarrito(index) {
-        carrito.splice(index, 1);
-        actualizarCarrito();
-    }
+<!-- Scripts -->
+    <script>
+        // Objeto para almacenar los productos en el carrito
+        let carrito = [];
 
-    // Función para actualizar la vista del carrito
-    function actualizarCarrito() {
-        // Aquí puedes actualizar la interfaz de usuario para mostrar el contenido del carrito
-        console.log(carrito);
-    }
-</script>
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        // Función para agregar un producto al carrito
+        function agregarAlCarrito(nombre, precio) {
+            const producto = { nombre, precio };
+            carrito.push(producto);
+            actualizarCarrito();
+        }
 
-<!-- Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        // Función para eliminar un producto del carrito
+        function eliminarDelCarrito(index) {
+            carrito.splice(index, 1);
+            actualizarCarrito();
+        }
 
-<!-- Bootstrap JS -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        // Función para actualizar la vista del carrito
+        function actualizarCarrito() {
+            const carritoList = document.getElementById('carrito-list');
+            carritoList.innerHTML = '';
+            carrito.forEach((producto, index) => {
+                const listItem = document.createElement('li');
+                listItem.className = 'list-group-item d-flex justify-content-between align-items-center';
+                listItem.innerHTML = `
+                    ${producto.nombre} - S/${producto.precio}
+                    <button class="btn btn-danger btn-sm" onclick="eliminarDelCarrito(${index})">Eliminar</button>
+                `;
+                carritoList.appendChild(listItem);
+            });
+        }
+    </script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 <footer class="py-16 text-center text-sm text-white-700 dark:text-white-300">
 <div class="container mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
