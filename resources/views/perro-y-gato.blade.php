@@ -148,11 +148,22 @@
 </section>
 <!-- Carrito de compras -->
 <div class="fixed-bottom bg-white p-3">
-        <h4 class="mb-3">Carrito de Compras</h4>
-        <ul id="carrito-list" class="list-group">
-            <!-- Los productos del carrito se mostrarán aquí -->
-        </ul>
-    </div>
+    <h4 class="mb-3">Carrito de Compras</h4>
+    <ul id="carrito-list" class="list-group">
+        <!-- Los productos del carrito se mostrarán aquí -->
+    </ul>
+    @auth <!-- Solo se mostrará si el usuario ha iniciado sesión -->
+    <button onclick="window.location.href='/otra-ruta'" class="custom-button">Realizar compra</button>
+    <!-- Calcula y muestra el total del precio a pagar -->
+    @php
+        $total = 0;
+        foreach($carrito as $producto) {
+            $total += $producto['precio'];
+        }
+    @endphp
+    <p>Total a pagar: S/{{$total}}</p>
+    @endauth
+</div>
 <section class="py-5" style="background-color: #7469B6;">
 <br>
 <p>Alimentos Para Perros</p>
