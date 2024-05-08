@@ -16,7 +16,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-QcXsB6BnKcPDaR6xOsEsM1t/BPvNvWQNTMArGZzg9Zu4ndL/EVXlW6fX+8X9RM1jQCGwMD1YMqipf5y8VX9x8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
-        
+        .custom-button {
+    background-color: #ADD8E6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: #87CEEB; /* Cambia el color cuando se pasa el ratón sobre el botón */
+}
         .dark-bg {
             background-color: black;
         }
@@ -57,6 +68,14 @@
             font-size: 14px;
             color: #666;
         }
+        .welcome-section {
+    background-image: url('https://img.freepik.com/fotos-premium/perros-gatos-que-miran-escondidas-sobre-banner-tienda-mascotas-linea-superior-madera-transparente-sonrisa-feliz-imagen-ia-generativa-divertida-weber_31965-205988.jpg');
+    background-size: cover; /* Para cubrir todo el área */
+    background-position: center; /* Para centrar la imagen */
+    /* Otros estilos opcionales */
+    padding: 50px; /* Ajusta el relleno según sea necesario */
+    color: white; /* Color de texto */
+}
     </style>
 </head>
 
@@ -115,9 +134,6 @@
     <section class="py-5 welcome-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <img src="https://img.freepik.com/fotos-premium/perros-gatos-que-miran-escondidas-sobre-banner-tienda-mascotas-linea-superior-madera-transparente-sonrisa-feliz-imagen-ia-generativa-divertida-weber_31965-205988.jpg" class="img-fluid" alt="Imagen de perros y gatos">
-            </div>
             <div class="col-md-6 d-flex align-items-center">
                 <div>
                     <h2>Bienvenido a nuestra tienda de alimentos para perros y gatos</h2>
@@ -141,7 +157,7 @@
         <div class="card-content">
             <h2 class="card-title">RICOCAN Cachorros Razas Pequeñas Carne y Leche Bolsa 3Kg.</h2>
             <p class="card-description">S/43.00</p>
-            <button onclick="agregarAlCarrito('RICOCAN Cachorros Razas Pequeñas Carne y Leche Bolsa 3Kg.', 43.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('RICOCAN Cachorros Razas Pequeñas Carne y Leche Bolsa 3Kg.', 43.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -149,7 +165,7 @@
         <div class="card-content">
             <h2 class="card-title">Alimento seco para perros Dogui Cachorros 8kg</h2>
             <p class="card-description">S/26.00</p>
-            <button onclick="agregarAlCarrito('Alimento seco para perros Dogui Cachorros 8kg', 26.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('Alimento seco para perros Dogui Cachorros 8kg', 26.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -157,7 +173,7 @@
         <div class="card-content">
             <h2 class="card-title">PEDIGREE® Puppy – Comida seca para perros medianos con pollo y arroz</h2>
             <p class="card-description">S/30.00</p>
-            <button onclick="agregarAlCarrito('PEDIGREE® Puppy – Comida seca para perros medianos con pollo y arroz', 30.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('PEDIGREE® Puppy – Comida seca para perros medianos con pollo y arroz', 30.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -165,7 +181,7 @@
         <div class="card-content">
             <h2 class="card-title">GANACAN Mix es de sabor Carne, Hígado y Pollo</h2>
             <p class="card-description">S/90.00</p>
-            <button onclick="agregarAlCarrito('GANACAN Mix es de sabor Carne, Hígado y Pollo', 90.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('GANACAN Mix es de sabor Carne, Hígado y Pollo', 90.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -173,7 +189,7 @@
         <div class="card-content">
             <h2 class="card-title">Comida para Perros RICOCAN Adultos Paté con Pollo Lata 330g</h2>
             <p class="card-description">S/7.00</p>
-            <button onclick="agregarAlCarrito('Comida para Perros RICOCAN Adultos Paté con Pollo Lata 330g', 7.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('Comida para Perros RICOCAN Adultos Paté con Pollo Lata 330g', 7.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -181,7 +197,7 @@
         <div class="card-content">
             <h2 class="card-title">Canbo Enlatado Cachorro Hipoalergenico 330 g</h2>
             <p class="card-description">S/8.00</p>
-            <button onclick="agregarAlCarrito('Canbo Enlatado Cachorro Hipoalergenico 330 g', 8.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('Canbo Enlatado Cachorro Hipoalergenico 330 g', 8.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -189,7 +205,7 @@
         <div class="card-content">
             <h2 class="card-title">Dog Chow Cordero y arroz enlatado de 374gr  Patihuellas</h2>
             <p class="card-description">S/ 10.00</p>
-            <button onclick="agregarAlCarrito('Dog Chow Cordero y arroz enlatado de 374gr  Patihuellas', 10.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('Dog Chow Cordero y arroz enlatado de 374gr  Patihuellas', 10.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -197,7 +213,7 @@
         <div class="card-content">
             <h2 class="card-title">ORIGENS ORIGINAL CARNE DE RES/PAVO 170GR - ADULTO SOBREPESO </h2>
             <p class="card-description">S/12.00</p>
-            <button onclick="agregarAlCarrito('ORIGENS ORIGINAL CARNE DE RES/PAVO 170GR - ADULTO SOBREPES', 12.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('ORIGENS ORIGINAL CARNE DE RES/PAVO 170GR - ADULTO SOBREPES', 12.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -205,7 +221,7 @@
         <div class="card-content">
             <h2 class="card-title">Dulces para perros/ Pedigree Dentastix</h2>
             <p class="card-description">S/14.00</p>
-            <button onclick="agregarAlCarrito('Dulces para perros/ Pedigree Dentastix', 14.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('Dulces para perros/ Pedigree Dentastix', 14.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -213,7 +229,7 @@
         <div class="card-content">
             <h2 class="card-title">Hill's SD - Golosinas Suaves para Perros Cachorros y Adultos - Carne & Queso</h2>
             <p class="card-description">S/4.00</p>
-            <button onclick="agregarAlCarrito('Golosinas suaves', 4.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('Golosinas suaves', 4.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -221,7 +237,7 @@
         <div class="card-content">
             <h2 class="card-title">Comida para Perros RICOCRACK Galletas Adultos Todas las Razas Multisabores</h2>
             <p class="card-description">S/9.00</p>
-            <button onclick="agregarAlCarrito('Comida para Perros RICOCRACK Galletas Adultos Todas las Razas Multisabores', 9.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('Comida para Perros RICOCRACK Galletas Adultos Todas las Razas Multisabores', 9.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -229,7 +245,8 @@
         <div class="card-content">
             <h2 class="card-title">Snack Para Perro Chunky Delidog Mix</h2>
             <p class="card-description">S/7.00</p>
-            <button onclick="agregarAlCarrito('Snack Para Perro Chunky Delidog Mix', 7.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('Snack Para Perro Chunky Delidog Mix', 7.00)" class="custom-button">Añadir al carrito</button>
+
         </div>
     </div>
 </div>
@@ -246,7 +263,7 @@
         <div class="card-content">
             <h2 class="card-title">Comida para Gatos RICOCAT Gatitos Carne Pescado y Leche Bolsa 9Kg </h2>
             <p class="card-description">S/43.00</p>
-            <button onclick="agregarAlCarrito('Comida para Gatos RICOCAT Gatitos Carne Pescado y Leche Bolsa 9Kg', 43.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('Comida para Gatos RICOCAT Gatitos Carne Pescado y Leche Bolsa 9Kg', 43.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -254,7 +271,7 @@
         <div class="card-content">
             <h2 class="card-title">DELIMIX ADULTOS SALMON,CARNE Y POLLO 3kg</h2>
             <p class="card-description">S/12.00</p>
-            <button onclick="agregarAlCarrito('DELIMIX ADULTOS SALMON,CARNE Y POLLO 3kg', 12.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('DELIMIX ADULTOS SALMON,CARNE Y POLLO 3kg', 12.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -262,7 +279,7 @@
         <div class="card-content">
             <h2 class="card-title">Alimento Whiskas 1+ Whiskas Gatos para gato adulto todos los tamaños sabor carne en bolsa de 10 kg </h2>
             <p class="card-description">S/54.00</p>
-            <button onclick="agregarAlCarrito('Alimento Whiskas 1+ Whiskas Gatos para gato adulto todos los tamaños sabor carne en bolsa de 10 kg', 54.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('Alimento Whiskas 1+ Whiskas Gatos para gato adulto todos los tamaños sabor carne en bolsa de 10 kg', 54.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -270,7 +287,7 @@
         <div class="card-content">
             <h2 class="card-title">Comida para Gatos FELIX Sensaciones de Pescado en Salsa para Gatitos Pouch 85g </h2>
             <p class="card-description">S/8.00</p>
-            <button onclick="agregarAlCarrito('Comida para Gatos FELIX Sensaciones de Pescado en Salsa para Gatitos Pouch 85g', 8.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('Comida para Gatos FELIX Sensaciones de Pescado en Salsa para Gatitos Pouch 85g', 8.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -278,7 +295,7 @@
         <div class="card-content">
             <h2 class="card-title">Comida para Gatos RICOCAT Adultos Paté Sardina y Pollo Lata 330g</h2>
             <p class="card-description">S/7.80</p>
-            <button onclick="agregarAlCarrito('Comida para Gatos RICOCAT Adultos Paté Sardina y Pollo Lata 330g', 7.80)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('Comida para Gatos RICOCAT Adultos Paté Sardina y Pollo Lata 330g', 7.80)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -286,7 +303,7 @@
         <div class="card-content">
             <h2 class="card-title">Supercat Paté sabor carne 160 g Gatitos Patihuellas</h2>
             <p class="card-description">S/4.00</p>
-            <button onclick="agregarAlCarrito('Supercat Paté sabor carne 160 g Gatitos Patihuellas', 4.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('Supercat Paté sabor carne 160 g Gatitos Patihuellas', 4.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -294,7 +311,7 @@
         <div class="card-content">
             <h2 class="card-title">Comida para Gato FANCY FEAST Filetes de Salmón Petits Lata 85g |</h2>
             <p class="card-description">S/6.00</p>
-            <button onclick="agregarAlCarrito('Comida para Gato FANCY FEAST Filetes de Salmón Petits Lata 85g ', 6.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('Comida para Gato FANCY FEAST Filetes de Salmón Petits Lata 85g ', 6.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -302,7 +319,7 @@
         <div class="card-content">
             <h2 class="card-title">FELIX® Estándar Lata Pollo y Pato en Gelatina | Purina®</h2>
             <p class="card-description">S/4.00</p>
-            <button onclick="agregarAlCarrito('FELIX® Estándar Lata Pollo y Pato en Gelatina | Purina®', 4.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('FELIX® Estándar Lata Pollo y Pato en Gelatina | Purina®', 4.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -310,7 +327,7 @@
         <div class="card-content">
             <h2 class="card-title">CHURUgATOS Dulce Para Gatos</h2>
             <p class="card-description">S/3.00</p>
-            <button onclick="agregarAlCarrito('CHURUgATOS', 3.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('CHURUgATOS', 3.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -318,7 +335,7 @@
         <div class="card-content">
             <h2 class="card-title">OPTIMUN sAbor Pollo 4kg </h2>
             <p class="card-description">s/15.00</p>
-            <button onclick="agregarAlCarrito('OPTIMUN sAbor Pollo 4kg ', 15.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('OPTIMUN sAbor Pollo 4kg ', 15.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -326,7 +343,7 @@
         <div class="card-content">
             <h2 class="card-title">Alimento Para GatO ALIMIAU sabor PESCADO</h2>
             <p class="card-description">S/12.00</p>
-            <button onclick="agregarAlCarrito('Alimento Para GatO ALIMIAU sabor PESCADO', 12.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('Alimento Para GatO ALIMIAU sabor PESCADO', 12.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
     <div class="card">
@@ -334,7 +351,7 @@
         <div class="card-content">
             <h2 class="card-title">Alimento SABROSITOS para gatos Pescado x1Kg </h2>
             <p class="card-description">S/10.00</p>
-            <button onclick="agregarAlCarrito('Alimento SABROSITOS para gatos Pescado x1Kg', 10.00)">Añadir al carrito</button>
+            <button onclick="agregarAlCarrito('Alimento SABROSITOS para gatos Pescado x1Kg', 10.00)"class="custom-button">Añadir al carrito</button>
         </div>
     </div>
 </div>
