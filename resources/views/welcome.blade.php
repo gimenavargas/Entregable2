@@ -27,6 +27,14 @@
         .custom-bg-celeste {
     background-color: #ADD8E6; /* Código hexadecimal para un tono de celeste */
 }
+.welcome-section {
+    background-image: url('https://img.freepik.com/fotos-premium/perros-gatos-que-miran-escondidas-sobre-banner-tienda-mascotas-linea-superior-madera-transparente-sonrisa-feliz-imagen-ia-generativa-divertida-weber_31965-205988.jpg');
+    background-size: cover; /* Para cubrir todo el área */
+    background-position: center; /* Para centrar la imagen */
+    /* Otros estilos opcionales */
+    padding: 50px; /* Ajusta el relleno según sea necesario */
+    color: white; /* Color de texto */
+}
     </style>
 </head>
 <body class="font-sans antialiased dark-bg dark-text/50">
@@ -49,8 +57,6 @@
     <a class="dropdown-item" href="/perro-y-gato"><i class="fas fa-dog"></i> Perro y Gato</a>
     <a class="dropdown-item" href="/otras-mascotas"><i class="fas fa-paw"></i> Otras Mascotas</a>
     <a class="dropdown-item" href="/peluqueria-canina"><i class="fas fa-cut"></i> Peluquería Canina</a>
-    <a class="dropdown-item" href="/novedades"><i class="fas fa-bullhorn"></i> Novedades</a>
-    <a class="dropdown-item" href="/ofertas"><i class="fas fa-tags"></i> Ofertas</a>
     <a class="dropdown-item" href="/adopciones"><i class="fas fa-hand-holding-heart"></i> Adopciones</a>
 </div>
                 </li>

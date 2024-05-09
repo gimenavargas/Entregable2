@@ -97,8 +97,6 @@
     <a class="dropdown-item" href="/perro-y-gato"><i class="fas fa-dog"></i> Perro y Gato</a>
     <a class="dropdown-item" href="/otras-mascotas"><i class="fas fa-paw"></i> Otras Mascotas</a>
     <a class="dropdown-item" href="/peluqueria-canina"><i class="fas fa-cut"></i> Peluquería Canina</a>
-    <a class="dropdown-item" href="/novedades"><i class="fas fa-bullhorn"></i> Novedades</a>
-    <a class="dropdown-item" href="/ofertas"><i class="fas fa-tags"></i> Ofertas</a>
     <a class="dropdown-item" href="/adopciones"><i class="fas fa-hand-holding-heart"></i> Adopciones</a>
 </div>
                 </li>
